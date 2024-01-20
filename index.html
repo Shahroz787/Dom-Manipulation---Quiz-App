@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JS - Quiz Application</title>
+  </head>
+  <body>
+    <!--Get started area started from here-->
+    <div class="myQuizApp">
+      <div class="img">
+        <img src="images/question.svg" alt="" />
+      </div>
+
+      <div class="text">
+        <h3>Quiz App with Fixed Time</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corporis
+          consequuntur id voluptate mollitia odit doloribus laborum enim
+          laudantium, quos, a
+        </p>
+
+        <h3>Quiz App with Fixed Time</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quidem.
+        </p>
+      </div>
+
+      <div class="btn">
+        <button>Start Quiz</button>
+      </div>
+    </div>
+    <!--Get started area ends here-->
+
+    <!--Rules area start from here-->
+    <div class="rulesBox">
+      <div class="rulesTitle">The rules that must be followed</div>
+
+      <div class="rulesList">
+        <ol>
+          <li>
+            You will have only <span style="color: tomato">15 second</span> for
+            per each question.
+          </li>
+          <li>Once you select your answer, it can't be undone.</li>
+          <li>You can't select any option once time goes off.</li>
+          <li>You can't exit from the Quiz while you're playing.</li>
+          <li>You'll get points on the basis of your correct answers.</li>
+        </ol>
+      </div>
+
+      <div class="buttons">
+        <button class="exitBtn">Exit Quiz</button>
+        <button class="continueBtn">Continue</button>
+      </div>
+    </div>
+    <!--Rules area ends here-->
+
+    <!--Question area starts from here-->
+    <div class="questions">
+      <header class="questionHeader">
+        <div class="title">Start Exam Now</div>
+        <div class="timeCount">
+          <div class="timeLeft">Time Left</div>
+          <div class="second">15</div>
+        </div>
+        <div class="timeLine"></div>
+      </header>
+
+      <div class="section">
+        <div class="textTwo">
+          <!-- <span>1. What Does HTML Stand For?</span> -->
+        </div>
+        <div class="myOptions"></div>
+      </div>
+
+      <footer>
+        <div class="totalQuestion">
+          <!-- <p>1 of 5 Questions</p> -->
+        </div>
+        <button class="nextBtn">Next Que.</button>
+      </footer>
+    </div>
+    <!-- 
+  
+    <!--Question area ends here-->
+
+    <!--Result area starts from here-->
+    <div class="resultBox">
+      <div class="resultImg">
+        <img src="images/winner.svg" alt="" />
+      </div>
+      <div class="completeText">Hey !! You have finished this exam !</div>
+      <div class="scoreText">
+        <span
+          >Have a next time! You got
+          <p>0</p>
+          out of
+          <p>5</p></span
+        >
+      </div>
+      <div class="buttons">
+        <button class="restart1">Again</button>
+        <button id="quite2" class="quit">Quit Quiz</button>
+      </div>
+    </div>
+
+    <!--Result area ends here-->
+
+ 
+
+    <script src="js/index.js"></script>
+    <script src="js/question.js"></script>
+  </body>
+</html>
